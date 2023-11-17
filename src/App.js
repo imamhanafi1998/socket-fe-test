@@ -3,7 +3,7 @@ import {io} from 'socket.io-client'
 const App= ()=> {
     const [time, setTime] = React.useState('fetching')  
     React.useEffect(()=>{
-        const socket = io('http://localhost:5000')
+        const socket = io('https://socket-be-test.onrender.com/')
         socket.on('connect', ()=>console.log(socket.id))
         socket.on('connect_error', ()=>{
         setTimeout(()=>socket.connect(),5000)
