@@ -5,7 +5,7 @@ const App = ()=> {
 
     // const [time, setTime] = React.useState('fetching')  
     // const [connected, setConnected] = useState(false)
-    const socket = io('localhost:5000')
+    const socket = io('https://socket-be-test.onrender.com')
     const [id, setId] = useState()
 
     // React.useEffect(() => {
