@@ -3,8 +3,8 @@ import {io} from 'socket.io-client'
 
 const App = ()=> {
 
-    // const socket = io('https://socket-be-test.onrender.com')
-    const socket = io('localhost:5000')
+    const socket = io('https://socket-be-test.onrender.com')
+    // const socket = io('localhost:5000')
 
 
     React.useEffect(() => {
